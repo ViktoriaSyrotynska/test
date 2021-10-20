@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+.middle {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background: #1c1c1c;
+    float: bottom;
+}
+
+.inner_header {
+    width: content-box;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    float: bottom;
+}
+
+.image_container {
+    height: 100%;
+    float: left;
+}
+
+.image_container img {
+    display: block;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.image_container1 {
+    float: left;
+    height: 100%;
+    margin: 30px;
+}
+
+.image_container1 img {
+    display: block;
+    object-fit: contain;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.text-container {
+    padding: 80px;
+}
+
+.text-container p {
+    color: #1c1c1c;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 16px;
+    /*font-size: 1.55vw;*/
+    margin: 8px;
+}
+
+.t1 {
+    table-layout: fixed;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.t1 th {
+    color: #b6b6b6;
+}
+
+th, td {
+    padding: 7px;
+    font-size: 14px;
+}
+
+.t2 {
+    margin-top: 30px;
+    width: 100%;
+    border: 1px solid #b6b6b6;
+    border-collapse: collapse;
+}
+
+.t2 td{
+    border: 1px solid #b6b6b6;
+    width: 25%;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.t2 h1{
+    color: #ff0035;
+    font-size: 16px;
+    text-align: center;
+}
+
+.t2 td:hover {
+    background-color: #d2d2d2;
+}
+
+@media screen and (max-width: 650px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .middle{
+        width: 100%;
+        height: 50%;
+    }
+}

@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: block;
+    float: bottom;
+    background: #1c1c1c;
+}
+
+#header {
+    height: 80px;
+    position: fixed;
+}
+
+.inner_header {
+    width: content-box;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    float: bottom;
+}
+
+.image_container {
+    height: 100%;
+    float: left;
+}
+
+.image_container img {
+    display: block;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.sticky-container {
+    margin: 0 auto;
+    height: 60px;
+    position: sticky;
+    top: 80px;
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    margin: auto;
+}
+
+.logo_container h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    letter-spacing: 5px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.navigation {
+    float: right;
+    height: 100%;
+}
+
+.navigation a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+    color: white;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+    height: 100%;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    height: 100%;
+    background-color: #d2d2d2;
+    color: black;
+}
+
+.header-box {
+    height: 100vh;
+    width: 100%;
+}
+
+.header-img{
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#video-container{
+    margin-right: 80px;
+    margin-left: 80px;
+    height: 50%;
+    width: 50%;
+}
+
+.container_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /*margin: 80px;*/
+}
+.text-container {
+    width: 50%;
+    height: auto;
+}
+
+.padding-container {
+     padding: 90px 80px 80px;
+ }
+
+.padding-container p {
+    color: #1c1c1c;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 16px;
+    /*font-size: 1.55vw;*/
+    margin: 8px;
+}
+
+.wrap {
+    margin-right: 80px;
+    margin-left: 80px;
+    padding-top: 70px;
+}
+
+.card {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.player {
+    flex: 0 0 auto;
+    width: 350px;
+    margin: 20px;
+    height: 60%;
+    background: rgb(34,1,147);
+    background: radial-gradient(circle, rgba(34,1,147,1) 0%, rgba(1,1,96,1) 35%, rgba(1,0,14,1) 100%);
+}
+
+.player img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player footer {
+    background-color: black;
+    height: 45px;
+    width: 100%;
+}
+
+.player footer h1 {
+    vertical-align: center;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .padding-container {
+        padding: 20px;
+    }
+
+    .padding-container p {
+        font-size: 10px;
+    }
+
+    .container_wrap{
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
+.padding-container table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse; /*одна рамка*/
+}
+
+.padding-container table th:nth-child(1) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(2) {
+    width: 30%;
+}
+
+.padding-container table th:nth-child(3) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(4) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(5) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(6) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(7) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(8) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(9) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(10) {
+    width: 5%;
+}
+
+.padding-container table th:nth-child(11) {
+    width: 25%;
+}
+
+.padding-container table tr:hover {
+    background-color: #d2d2d2;
+}
+
+.padding-container table th {
+    text-align: left;
+    background-color: #00366e;
+    color: white;
+}
+
+.padding-container li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 5px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 2vmax;
+    height: 2vmax;
+    margin: 2px;
+    float: left;
+    border: 1px solid #aba8a8;
+}
+
+.circle1 {
+    background-color: darkgreen;
+}
+
+.circle2 {
+    background-color: #a40303;
+}
+
+.circle3 {
+    background-color: #aba8a8;
+}
+
+th, td {
+    padding: 20px;
+    font-size: 1.55vw;
+}
+
+#audio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 80px 80px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #00366e;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
