@@ -186,21 +186,30 @@ html {
 }
 
 @media screen and (max-width: 850px) {
+    #video-container{
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 100%;
+    }
+    .text-container{
+        width: 100%;
+    }
+
     .padding-container {
         padding: 20px;
     }
 
     .padding-container p {
-        font-size: 10px;
+        font-size: 11px;
     }
 
-    .container_wrap{
+    .container_wrap {
         flex-direction: column;
         margin: 10px;
     }
 }
 
-.padding-container table{
+.padding-container table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse; /*одна рамка*/
@@ -290,7 +299,7 @@ html {
 
 th, td {
     padding: 20px;
-    font-size: 1.55vw;
+    font-size: 15px;
 }
 
 #audio-container {
